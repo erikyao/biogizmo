@@ -61,7 +61,7 @@ def add_subparser_pw_aln(_subparsers):
 
     # Pairwise Alignment sub-command
     parser_pw_aln = _subparsers.add_parser("pw-aln", add_help=True,
-                                           description="Fetch ChIA-PET cluster sequences.")
+                                           description="Perform pairwise alignment.")
     parser_pw_aln.add_argument('--alg', dest='alg', type=str, required=True,
                                choices=['global', 'local'],
                                help="whether to perform global alignment (Needleman-Wunsch) "
